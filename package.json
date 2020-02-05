@@ -1,0 +1,52 @@
+{
+    "name": "@gh-actions/helpers",
+    "version": "0.0.1-alpha.1",
+    "description": "",
+    "main": "lib/src/index.js",
+    "types": "lib/src/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "prettier": "prettier '**/*.ts' '**/*.yml' '**/*.yaml' '**/*.json' '**/*.js' '**/*.md'",
+        "lint": "eslint --no-error-on-unmatched-pattern '**/*.js' '**/*.json' '**/*.md' '**/*.ts'",
+        "lint:fix": "npm run prettier -- --write && npm run lint -- --fix",
+        "pack": "npm run build",
+        "test": "jest",
+        "all": "npm run lint:fix && npm run pack && npm test"
+    },
+    "keywords": [
+        "github",
+        "actions",
+        "helpers",
+        "gh-actions"
+    ],
+    "author": "Rik Hoffbauer",
+    "license": "MIT",
+    "devDependencies": {
+        "@actions/core": "^1.2.2",
+        "@types/jest": "^25.1.1",
+        "@types/node": "^13.7.0",
+        "@typescript-eslint/eslint-plugin": "^2.19.0",
+        "@typescript-eslint/parser": "^2.19.0",
+        "@zeit/ncc": "^0.20.5",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-github": "^3.4.0",
+        "eslint-plugin-jest": "^22.21.0",
+        "eslint-plugin-json": "^2.0.1",
+        "eslint-plugin-markdown": "^1.0.1",
+        "eslint-plugin-prettier": "^3.1.2",
+        "husky": "^4.2.1",
+        "jest": "^25.1.0",
+        "jest-circus": "^25.1.0",
+        "js-yaml": "^3.13.1",
+        "lint-staged": "^10.0.7",
+        "prettier": "^1.19.1",
+        "ts-jest": "^25.2.0",
+        "typescript": "^3.7.5"
+    },
+    "dependencies": {
+        "@types/fs-extra": "^8.0.1",
+        "execa": "^4.0.0",
+        "fs-extra": "^8.1.0"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "*.{yml,yaml}": ["node_modules/.bin/prettier --write"],
+    "*.{json,md,ts,js}": [
+        "node_modules/.bin/prettier --write",
+        "node_modules/.bin/eslint --fix"
+    ]
+}

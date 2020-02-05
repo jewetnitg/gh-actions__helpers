@@ -1,0 +1,50 @@
+{
+    "name": "Rik Hoffbauer",
+    "github": "jewetnitg",
+    "url": "https://github.com/jewetnitg",
+    "email": "Rikhoffbauer@gmail.com",
+    "license": "MIT",
+
+    "indent": "4",
+
+    "prettierOptions": {
+        "printWidth": 80,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": false,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "arrowParens": "avoid"
+    },
+
+    "readmeFile": "README.md",
+    "licenseFile": "LICENSE.md",
+    "contributingFile": "CONTRIBUTING.md",
+
+    "eslintPreset": "standard",
+    "eslintPeerDependencies": [
+        "prettier",
+        "eslint-plugin-prettier",
+        "eslint-config-standard",
+        "eslint-plugin-standard",
+        "eslint-plugin-promise",
+        "eslint-plugin-import",
+        "eslint-plugin-node"
+    ],
+
+    "aliases": {
+        "express": ["start"],
+        "start": [
+            "editorconfig",
+            "package",
+            "typescript",
+            "license",
+            "readme",
+            "prettier",
+            "gitignore",
+            "eslint",
+            "jest"
+        ]
+    }
+}

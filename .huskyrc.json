@@ -1,0 +1,6 @@
+{
+    "hooks": {
+        "pre-commit": "lint-staged && npm run build && npm run pack && git add lib",
+        "pre-push": "CI=true npm t"
+    }
+}
